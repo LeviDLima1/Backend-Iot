@@ -32,4 +32,4 @@ const wss = new WebSocket.Server({ server });
 
 wss.on('connection', (ws) => {
   console.log('Novo cliente WebSocket conectado');
-}); 
+});
