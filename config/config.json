@@ -15,7 +15,7 @@
   },
   "production": {
     "username": "420052",
-    "password": "L13102004l!",
+    "password": "Levi13102004lima!",
     "database": "pettracker_rastreio",
     "host": "mysql-pettracker.alwaysdata.net",
     "dialect": "mysql"
