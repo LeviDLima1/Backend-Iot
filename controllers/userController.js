@@ -64,6 +64,7 @@ exports.getUsers = async (req, res) => {
     const users = await User.findAll({ attributes: ['id', 'name', 'email'] });
     res.json(users);
   } catch (err) {
+    console.error(err);
     res.status(500).json({ error: 'Erro ao buscar usuários.' });
   }
 };
