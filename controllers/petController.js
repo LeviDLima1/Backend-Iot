@@ -3,6 +3,7 @@ const { Pet, User } = require('../models');
 // Cadastrar novo pet
 exports.createPet = async (req, res) => {
   try {
+    console.log('req.body recebido:', req.body);
     const { name, breed, age, macId, lastUpdate, isOnline, userId, homeArea, location } = req.body;
     if (!name || !macId || !userId) {
       return res.status(400).json({ error: 'Nome, macId e userId são obrigatórios.' });
