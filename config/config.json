@@ -1,23 +1,23 @@
 {
   "development": {
     "username": "root",
-    "password": "root",
-    "database": "coleiraIot",
-    "host": "127.0.0.1",
+    "password": "OycOGBefGiZhAtfGgbFYKWASDAtozpEv",
+    "database": "railway",
+    "host": "mysql.railway.internal",
     "dialect": "mysql"
   },
   "test": {
     "username": "root",
-    "password": "root",
-    "database": "database_test",
-    "host": "127.0.0.1",
+    "password": "OycOGBefGiZhAtfGgbFYKWASDAtozpEv",
+    "database": "railway",
+    "host": "mysql.railway.internal",
     "dialect": "mysql"
   },
   "production": {
-    "username": "420052",
-    "password": "Levi13102004lima!",
-    "database": "pettracker_rastreio",
-    "host": "mysql-pettracker.alwaysdata.net",
+    "username": "root",
+    "password": "OycOGBefGiZhAtfGgbFYKWASDAtozpEv",
+    "database": "railway",
+    "host": "mysql.railway.internal",
     "dialect": "mysql"
   }
 }
