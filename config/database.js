@@ -5,12 +5,18 @@ console.log('MYSQL_USER:', process.env.MYSQLUSER);
 console.log('MYSQL_PASSWORD:', process.env.MYSQLPASSWORD ? '***' : 'NÃO DEFINIDA');
 console.log('MYSQL_HOST:', process.env.MYSQLHOST);
 
+const MYSQL_DATABASE = process.env.MYSQLDATABASE
+const MYSQL_USER = process.env.MYSQLUSER
+const MYSQL_PASSWORD = process.env.MYSQLPASSWORD
+const MYSQL_HOST = process.env.MYSQLHOST
+
+
 const sequelize = new Sequelize(
-  process.env.MYSQLDATABASE,
-  process.env.MYSQLUSER,
-  process.env.MYSQLPASSWORD,
+  MYSQL_DATABASE,
+  MYSQL_USER,
+  MYSQL_PASSWORD,
   {
-    host: process.env.MYSQLHOST,
+    host: MYSQL_HOST,
     dialect: 'mysql',
     logging: false,
   }
