@@ -103,4 +103,18 @@ exports.getUserById = async (req, res) => {
   } catch (err) {
     res.status(500).json({ error: 'Erro ao buscar usuário.' });
   }
+};
+
+// Deletar usuário por ID
+exports.deleteUser = async (req, res) => {
+  try {
+    const { id } = req.params;
+    const deleted = await User.destroy({ where: { id } });
+    if (deleted) {
+      return res.status(200).json({ message: 'Usuário deletado com sucesso!' });
+    }
+    return res.status(404).json({ error: 'Usuário não encontrado.' });
+  } catch (err) {
+    return res.status(500).json({ error: 'Erro ao deletar usuário.' });
+  }
 }; 
