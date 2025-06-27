@@ -23,6 +23,7 @@ exports.createPet = async (req, res) => {
     const pet = await Pet.create({ name, breed, age, macId, lastUpdate, isOnline, userId, homeArea: safeHomeArea, location: safeLocation });
     res.status(201).json(pet);
   } catch (err) {
+    console.error('Erro ao cadastrar pet:', err);
     res.status(500).json({ error: 'Erro ao cadastrar pet.' });
   }
 };
